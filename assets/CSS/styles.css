@@ -3,12 +3,18 @@ body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
-}
-
-#contenedor-padre {
     display: grid;
     grid-template-columns: 40% 60%;
-    grid-template-rows: 50% 50%;
 }
+
+#contenedor-formulario {
+    background-color: #000033;
+    color: #00CCFF
+}
+
+
+
+
+
 
 
