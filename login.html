@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/CSS/styles.css">
+  <title>Inicio de Sesión</title>
+</head>
+
+<body>
+
+  <div class="container d-flex justify-content-center align-items-center min-vh-100">
+    <div id="contenedor-formulario" class="card shadow p-4" style="max-width: 400px; width: 100%; height: 450px;">
+      <h2 class="text-center mb-3">Bienvenido de vuelta</h2>
+      <form action="#" method="post">
+        <div class="mb-3">
+          <label for="usuario" class="form-label">Nombre de usuario</label>
+          <input type="text" class="form-control" id="usuario" placeholder="Usuario" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="contraseña" class="form-label">Contraseña</label>
+          <input type="password" class="form-control" id="contraseña" placeholder="Introduzca su contraseña" required>
+        </div>
+
+        <button type="submit" id="buttonSubmit" class="btn btn-primary w-100">Iniciar sesión</button>
+
+      <hr>
+
+      <div class="text-center">
+        <p class="mb-2">O Iniciar seción con:</p>
+        <div class="d-flex justify-content-between">
+          <button class="btn btn-outline-danger w-50 me-2">Google</button>
+          <button class="btn btn-outline-primary w-50">Facebook</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
