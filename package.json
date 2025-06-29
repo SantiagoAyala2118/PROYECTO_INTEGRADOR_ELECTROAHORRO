@@ -1,7 +1,7 @@
 {
   "name": "proyecto_integrador_electroahorro",
   "version": "1.0.0",
-  "main": "main.js",
+  "main": "app.js",
   "type":"module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
