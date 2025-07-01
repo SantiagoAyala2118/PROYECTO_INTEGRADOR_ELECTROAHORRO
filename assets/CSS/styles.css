@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
-    background-image: url('../img/imagen-fondo-registro.jpg');
+    background-image: url('../img/fondo-formulario-registro-login.jpg'); 
     font-family: 'Bebas Neue', sans-serif;
     font-size: 19px;
 }
