@@ -6,8 +6,8 @@ document.addEventListener("DOMContentLoaded", () => {
     e.preventDefault();
 
     const valor = parseFloat(document.getElementById("valor").value);
-    const unidadEntrada = document.getElementById("unidadEntrada").value;
-    const unidadSalida = document.getElementById("unidadSalida").value;
+    const unidadEntrada = document.getElementById("valorIngresado").value;
+    const unidadSalida = document.getElementById("valorDeSalida").value;
     const precioKWh = parseFloat(document.getElementById("precio").value);
 
     let valorEnKWh = convertirAKWh(valor, unidadEntrada);
@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
       resultadoFinal = convertirDesdeKWh(valorEnKWh, unidadSalida);
       resultadoDiv.innerHTML = `
         <div class="alert alert-info">
-          Equivale a <strong>${resultadoFinal.toFixed(4)} ${unidadSalida}</strong>
+          Equivale a <strong>${resultadoFinal.toFixed(2)} ${unidadSalida}</strong>
         </div>
       `;
     }
@@ -52,3 +52,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 });
+
+let botonReiniciar = document.getElementById('reiniciar');
+botonReiniciar.addEventListener('reset', (e) => {
+  location.reload();
+})
