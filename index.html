@@ -10,11 +10,11 @@
     />
     <link rel="stylesheet" href="./assets/CSS/index.css" />
   </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-custom-azul fixed-top">
+  <body style="background-image: linear-gradient(#040220,#0e0e5f,#201b6d,#3a3d99);">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-gradient fixed-top">
       <div class="container">
         <a class="navbar-brand fw-bold" href="#">
-          <span class="text-custom-amarillo">ELECTRO</span>AHORRO
+          <span class="text-custom-amarillo">ELECTRO</span><span class="text-primary">AHORRO</span>
         </a>
         <button
           class="navbar-toggler"
@@ -27,7 +27,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" href="#">Inicio</a>
+              <a class="nav-link active text-primary" href="#">Inicio</a>
             </li>
             <li class="nav-item"><a class="nav-link" href="./concientización.html">Consejos</a></li>
             <li class="nav-item">
@@ -35,35 +35,34 @@
             </li>
             <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
           </ul>
-          <button class="btn btn-custom ms-lg-3">Empieza a ahorrar</button>
         </div>
       </div>
     </nav>
-    <header class="pt-5 mt-5 bg-light">
+    <header class="pt-5 mt-5">
       <div class="container py-5">
         <div class="row align-items-center">
           <div class="col-lg-6">
-            <h1 class="display-4 fw-bold mb-3">
-              Ahorra <span class="text-custom-amarillo">sin esfuerzo</span>
+            <h1 class="display-4 fw-bold mb-3 text-light">
+              Ahorre <span class="text-custom-amarillo">sin esfuerzo</span>
             </h1>
-            <p class="lead mb-4">
-              Descubre técnicas innovadoras para gestionar tus finanzas y
-              multiplicar tus ahorros.
+            <p class="lead mb-4 text-light">
+              Implemente técnicas para gestionar sus gastos y
+              multiplicar sus ahorros.
             </p>
             <button class="btn btn-custom btn-lg px-4">¡Quiero probar!</button>
           </div>
         </div>
       </div>
     </header>
-    <section class="py-5 bg-white">
+    <section class="py-5">
       <div class="container">
-        <h2 class="text-center mb-5">¿Por qué elegirnos?</h2>
+        <h2 class="text-center mb-5 text-warning">¿Por qué elegirnos?</h2>
         <div class="row g-4">
           <div class="col-md-4">
-            <div class="card h-100 card-hover">
+            <div class="card h-100 card-hover bg-black bg-gradient border border-warning border-3">
               <div class="card-body text-center">
                 <div
-                  class="bg-custom-azul text-white rounded-circle p-3 d-inline-block mb-3"
+                  class="bg-light text-primary rounded-circle p-3 d-inline-block mb-3"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -77,19 +76,18 @@
                     />
                   </svg>
                 </div>
-                <h5 class="card-title">Seguro</h5>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Nullam in dui mauris.
+                <h5 class="card-title text-warning">Seguro</h5>
+                <p class="card-text text-primary">
+                  Cuenta con una logica dedicada en el lado del Backend, lo que asegura un ambiente seguro y libre de peligro.
                 </p>
               </div>
             </div>
           </div>
           <div class="col-md-4">
-            <div class="card h-100 card-hover">
+            <div class="card h-100 card-hover bg-black bg-gradient border border-warning border-3">
               <div class="card-body text-center">
                 <div
-                  class="bg-custom-azul text-white rounded-circle p-3 d-inline-block mb-3"
+                  class="bg-white text-primary rounded-circle p-3 d-inline-block mb-3"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -103,19 +101,19 @@
                     />
                   </svg>
                 </div>
-                <h5 class="card-title">Rápido</h5>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Nullam in dui mauris.
+                <h5 class="card-title text-warning">Rápido</h5>
+                <p class="card-text text-primary">
+                  Posee una estructura liviana y adaptada a todos los dispositivos, lo que le otorga una ligereza
+                  y rapidez mayor.
                 </p>
               </div>
             </div>
           </div>
           <div class="col-md-4">
-            <div class="card h-100 card-hover">
+            <div class="card h-100 card-hover bg-black bg-gradient border border-warning border-3">
               <div class="card-body text-center">
                 <div
-                  class="bg-custom-azul text-white rounded-circle p-3 d-inline-block mb-3"
+                  class="bg-white text-primary rounded-circle p-3 d-inline-block mb-3"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -129,10 +127,9 @@
                     />
                   </svg>
                 </div>
-                <h5 class="card-title">Personalizado</h5>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Nullam in dui mauris.
+                <h5 class="card-title text-warning">Personalizado</h5>
+                <p class="card-text text-primary">
+                  Representa un ambiente personalizado al adaptarse al consumo y tarifas locales de cada usuario.
                 </p>
               </div>
             </div>
@@ -140,20 +137,22 @@
         </div>
       </div>
     </section>
-    <section class="py-5 bg-light">
+
+    <!--SECCIÓN DE FUNCIONALIDADES-->
+    <section class="py-5">
       <div class="container">
-        <h2 class="text-center mb-5">Tips rápidos de ahorro</h2>
+        <h2 class="text-center mb-5 text-warning">Explorar</h2>
         <div class="row g-4">
           <div class="col-md-6 col-lg-4">
-            <div class="card card-hover">
+            <div class="card card-hover bg-black bg-gradient border border-warning border-3" style="max-height:600px; height:700px;">
               <img
                 src="./assets/img/imagen-calculadora-removebg-preview.png"
                 class="card-img-top"
                 alt="Tip 1"
               />
               <div class="card-body">
-                <h5 class="card-title">Calculadora de corriente</h5>
-                <p class="card-text">
+                <h5 class="card-title text-primary">Calculadora de corriente</h5>
+                <p class="card-text text-light">
                   Prueba la calculadora de corriente para hacer conversiones de unidades de 
                   medición eléctrica y calcular un promedio de lo que deberás pagar.
                 </p>
@@ -162,34 +161,33 @@
             </div>
           </div>
           <div class="col-md-6 col-lg-4">
-            <div class="card card-hover">
+            <div class="card card-hover bg-black bg-gradient border border-warning border-3" style="max-height:600px; height:700px;">
               <img
-                src="./assets/img/imagen-carta-rayo.jpg"
-                class="card-img-top"
+                src="./assets/img/imagen-de-trakeo-consumo.png"
+                class="card-img-top mb-4"
                 alt="Tip 2"
               />
               <div class="card-body">
-                <h5 class="card-title">Lorem Ipsum</h5>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Nullam in dui mauris.
+                <h5 class="card-title text-primary">Trakeo de Consumo</h5>
+                <p class="card-text text-light">
+                  Vea en tiempo real el consumo de la totalidad de sus electrodomésticos.
                 </p>
                 <a href="#" class="btn btn-sm btn-custom">Leer más</a>
               </div>
             </div>
           </div>
           <div class="col-md-6 col-lg-4">
-            <div class="card card-hover">
+            <div class="card card-hover bg-black bg-gradient border border-warning border-3" style="max-height:600px; height:700px;">
               <img
-                src="./assets/img/imagen-carta-rayo.jpg"
+                src="./assets/img/imagen-personas-noticias.png"
                 class="card-img-top"
                 alt="Tip 3"
+                style="margin-bottom:135px;"
               />
               <div class="card-body">
-                <h5 class="card-title">Lorem Ipsum</h5>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Nullam in dui mauris.
+                <h5 class="card-title text-primary">Noticias y concientización</h5>
+                <p class="card-text text-light">
+                  Revice las últimas noticias respecto al consumo eléctrico. 
                 </p>
                 <a href="#" class="btn btn-sm btn-custom">Leer más</a>
               </div>
@@ -199,7 +197,7 @@
       </div>
     </section>
 
-    <footer class="py-4 bg-custom-azul text-white">
+    <footer class="py-4 bg-dark bg-gradient text-white">
       <div class="container text-center">
         <p class="mb-0">
           © 2023 ElectroAhorro. Todos los derechos reservados.
