@@ -16,15 +16,30 @@ document.addEventListener("DOMContentLoaded", () => {
     if (unidadSalida === "pesos") {
       resultadoFinal = valorEnKWh * precioKWh;
       resultadoDiv.innerHTML = `
-        <div class="alert alert-success">
-          Equivale a <strong>$${resultadoFinal.toFixed(2)}</strong> (con un precio de $${precioKWh} por kWh)
+        <div class="alert alert-success"style=
+        "background-color:#ecab0f;
+        color:black;
+        border: solid;
+        border-color:black;
+        border-width:3px;
+        box-shadow:2px 2px 30px 1px rgba(0, 144, 246, 0.773) ;
+        ">>
+          Equivale a <strong>$${resultadoFinal.toFixed(4)}</strong> (con un precio de $${precioKWh} por kWh)
         </div>
       `;
     } else {
       resultadoFinal = convertirDesdeKWh(valorEnKWh, unidadSalida);
       resultadoDiv.innerHTML = `
-        <div class="alert alert-info">
-          Equivale a <strong>${resultadoFinal.toFixed(2)} ${unidadSalida}</strong>
+        <div class="alert alert-info"
+        style=
+        "background-color:#ecab0f;
+        color:black;
+        border: solid;
+        border-color:black;
+        border-width:3px;
+        box-shadow:2px 2px 30px 1px rgba(0, 144, 246, 0.773);
+        ">
+          Equivale a <strong>${resultadoFinal.toFixed(4)} ${unidadSalida}</strong>
         </div>
       `;
     }

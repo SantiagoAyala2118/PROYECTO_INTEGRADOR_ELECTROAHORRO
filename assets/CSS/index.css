@@ -118,9 +118,11 @@ header {
 }
 
 .funcionalidad-card {
-  border: none;
+  border: solid;
   border-radius: 10px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  border-width: 4px;
+  border-color: #0290f0;
+  box-shadow: 0 10px 20px rgba(0, 144, 246, 0.773);
   transition: all 0.3s ease;
   background: rgba(0, 0, 0, 0.7);
   overflow: hidden;
@@ -130,15 +132,23 @@ header {
 
 .funcionalidad-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 15px 30px rgba(0, 221, 255, 0.986);
+  border-color:#51b3f5;
 }
-
 .card-img-top {
   border-radius: 10px 10px 0 0;
   height: 200px;
   object-fit: contain;
   padding: 1rem;
   background: rgba(255, 255, 255, 0.05);
+}
+
+#card-icon{
+  border: solid;
+  border-color:#0290f0; 
+  color:white;
+  box-shadow: 2px 2px 30px 1px rgba(0, 144, 246, 0.773);
+
 }
 
 .section-title {
@@ -179,8 +189,4 @@ footer {
     0% { box-shadow: 0 0 0 0 rgba(255, 215, 0, 0.4); }
     70% { box-shadow: 0 0 0 15px rgba(255, 215, 0, 0); }
     100% { box-shadow: 0 0 0 0 rgba(255, 215, 0, 0); }
-<<<<<<< HEAD
   }
-=======
-  }
->>>>>>> 33ab75ec07534e74c816fea96f21d951591f8208
