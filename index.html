@@ -3,18 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ahorro Inteligente | Inicio</title>
+    <title>ElectroAhorro | Inicio</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
     <link rel="stylesheet" href="./assets/CSS/index.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-custom-azul fixed-top">
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark bg-gradient fixed-top"
+    >
       <div class="container">
         <a class="navbar-brand fw-bold" href="#">
-          <span class="text-custom-amarillo">AHORRO</span>INTELIGENTE
+          <span class="text-custom-amarillo">ELECTRO</span>
+          <span class="text-primary">AHORRO</span>
         </a>
         <button
           class="navbar-toggler"
@@ -27,171 +34,101 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" href="#">Inicio</a>
+              <a class="nav-link active text-primary" href="#">Inicio</a>
             </li>
-            <li class="nav-item"><a class="nav-link" href="#">Consejos</a></li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Calculadora</a>
+              <a class="nav-link" href="./concientización.html">Consejos</a>
             </li>
-            <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="./calculadora.html">Calculadora</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contacto</a>
+            </li>
           </ul>
-          <button class="btn btn-custom ms-lg-3">Empieza a ahorrar</button>
         </div>
       </div>
     </nav>
-    <header class="pt-5 mt-5 bg-light">
+
+    <header>
       <div class="container py-5">
         <div class="row align-items-center">
           <div class="col-lg-6">
-            <h1 class="display-4 fw-bold mb-3">
-              Ahorra <span class="text-custom-amarillo">sin esfuerzo</span>
+            <h1 class="display-4 fw-bold mb-3 text-light">
+              Ahorre <span class="text-custom-amarillo">sin esfuerzo</span>
             </h1>
-            <p class="lead mb-4">
-              Descubre técnicas innovadoras para gestionar tus finanzas y
-              multiplicar tus ahorros.
+            <p class="lead mb-4 text-light">
+              Implemente técnicas para gestionar sus gastos y multiplicar sus
+              ahorros.
             </p>
             <button class="btn btn-custom btn-lg px-4">¡Quiero probar!</button>
+          </div>
+          <div class="col-lg-6 text-center d-none d-lg-block">
+            <div
+              class="p-2"
+              style="
+                display: inline-block;
+                border-radius: 50%;
+                animation: pulse 2s infinite;
+              "
+            >
+              <img
+                src="./assets/img/Logo.jpeg"
+                alt="Ahorro energético"
+                class="img-fluid rounded-circle"
+                style="width: 220px; height: 220px; object-fit: cover"
+              />
+            </div>
           </div>
         </div>
       </div>
     </header>
-    <section class="py-5 bg-white">
+
+    <section class="py-5">
       <div class="container">
-        <h2 class="text-center mb-5">¿Por qué elegirnos?</h2>
+        <h2 class="text-center mb-5 text-warning section-title">
+          ¿Por qué elegirnos?
+        </h2>
         <div class="row g-4">
           <div class="col-md-4">
-            <div class="card h-100 card-hover">
+            <div class="card h-100 feature-card card-seguro">
               <div class="card-body text-center">
-                <div
-                  class="bg-custom-azul text-white rounded-circle p-3 d-inline-block mb-3"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    fill="currentColor"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"
-                    />
-                  </svg>
+                <div class="icon-container icon-seguro">
+                  <i class="bi bi-shield-lock"></i>
                 </div>
-                <h5 class="card-title">Seguro</h5>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Nullam in dui mauris.
+                <h5 class="card-title text-warning">Seguro</h5>
+                <p class="card-text text-light">
+                  Cuenta con una lógica dedicada en el lado del Backend, lo que
+                  asegura un ambiente seguro y libre de peligro.
                 </p>
               </div>
             </div>
           </div>
           <div class="col-md-4">
-            <div class="card h-100 card-hover">
+            <div class="card h-100 feature-card card-rapido">
               <div class="card-body text-center">
-                <div
-                  class="bg-custom-azul text-white rounded-circle p-3 d-inline-block mb-3"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    fill="currentColor"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M8 10.933l1.669-1.593a.5.5 0 0 1 .67.013l.7.7a.5.5 0 0 1-.012.67l-2.81 2.68a.5.5 0 0 1-.708 0l-2.81-2.68a.5.5 0 0 1-.012-.67l.7-.7a.5.5 0 0 1 .67-.013L8 10.933zm-4.4-6.266a.5.5 0 0 1 .78 0l3.12 3.123a.5.5 0 0 1 0 .78l-3.12 3.123a.5.5 0 0 1-.78 0L.22 8.56a.5.5 0 0 1 0-.78l3.4-3.4z"
-                    />
-                  </svg>
+                <div class="icon-container icon-rapido">
+                  <i class="bi bi-lightning-charge"></i>
                 </div>
-                <h5 class="card-title">Rápido</h5>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Nullam in dui mauris.
+                <h5 class="card-title text-warning">Rápido</h5>
+                <p class="card-text text-light">
+                  Posee una estructura liviana y adaptada a todos los
+                  dispositivos, lo que le otorga una ligereza y rapidez mayor.
                 </p>
               </div>
             </div>
           </div>
           <div class="col-md-4">
-            <div class="card h-100 card-hover">
+            <div class="card h-100 feature-card card-personalizado">
               <div class="card-body text-center">
-                <div
-                  class="bg-custom-azul text-white rounded-circle p-3 d-inline-block mb-3"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    fill="currentColor"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"
-                    />
-                  </svg>
+                <div class="icon-container icon-personalizado">
+                  <i class="bi bi-person-gear"></i>
                 </div>
-                <h5 class="card-title">Personalizado</h5>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Nullam in dui mauris.
+                <h5 class="card-title text-warning">Personalizado</h5>
+                <p class="card-text text-light">
+                  Representa un ambiente personalizado al adaptarse al consumo y
+                  tarifas locales de cada usuario.
                 </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="py-5 bg-light">
-      <div class="container">
-        <h2 class="text-center mb-5">Tips rápidos de ahorro</h2>
-        <div class="row g-4">
-          <div class="col-md-6 col-lg-4">
-            <div class="card card-hover">
-              <img
-                src="./assets/img/imagen-carta-rayo.jpg"
-                class="card-img-top"
-                alt="Tip 1"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Lorem Ipsum</h5>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Nullam in dui mauris.
-                </p>
-                <a href="#" class="btn btn-sm btn-custom">Leer más</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="card card-hover">
-              <img
-                src="./assets/img/imagen-carta-rayo.jpg"
-                class="card-img-top"
-                alt="Tip 2"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Lorem Ipsum</h5>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Nullam in dui mauris.
-                </p>
-                <a href="#" class="btn btn-sm btn-custom">Leer más</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="card card-hover">
-              <img
-                src="./assets/img/imagen-carta-rayo.jpg"
-                class="card-img-top"
-                alt="Tip 3"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Lorem Ipsum</h5>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Nullam in dui mauris.
-                </p>
-                <a href="#" class="btn btn-sm btn-custom">Leer más</a>
               </div>
             </div>
           </div>
@@ -199,23 +136,98 @@
       </div>
     </section>
 
-    <footer class="py-4 bg-custom-azul text-white">
+    <section class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-5 text-warning section-title">Explorar</h2>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="card funcionalidad-card card-funcionalidad">
+              <img
+                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='200' viewBox='0 0 400 200'%3E%3Crect fill='%231a2530' width='400' height='200'/%3E%3Crect fill='%23202b3d' x='50' y='30' width='300' height='140' rx='10'/%3E%3Ccircle fill='%233498db' cx='120' cy='100' r='20'/%3E%3Ccircle fill='%232ecc71' cx='200' cy='100' r='20'/%3E%3Ccircle fill='%23e67e22' cx='280' cy='100' r='20'/%3E%3C/svg%3E"
+                class="card-img-top"
+                alt="Calculadora"
+              />
+              <div class="card-body">
+                <div class="icon-container icon-funcionalidad mb-3">
+                  <i class="bi bi-calculator"></i>
+                </div>
+                <h5 class="card-title text-warning">
+                  Calculadora de corriente
+                </h5>
+                <p class="card-text text-light">
+                  Prueba la calculadora de corriente para hacer conversiones de
+                  unidades de medición eléctrica y calcular un promedio de lo
+                  que deberás pagar.
+                </p>
+                <a href="./calculadora.html" class="btn btn-sm btn-custom"
+                  >Probar</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card funcionalidad-card card-funcionalidad">
+              <img
+                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='200' viewBox='0 0 400 200'%3E%3Crect fill='%231a2530' width='400' height='200'/%3E%3Crect fill='%23202b3d' x='50' y='30' width='300' height='140' rx='10'/%3E%3Cpath d='M100,100 L150,60 L200,140 L250,80 L300,120' stroke='%233498db' stroke-width='3' fill='none'/%3E%3Ccircle fill='%233498db' cx='100' cy='100' r='5'/%3E%3Ccircle fill='%233498db' cx='150' cy='60' r='5'/%3E%3Ccircle fill='%233498db' cx='200' cy='140' r='5'/%3E%3Ccircle fill='%233498db' cx='250' cy='80' r='5'/%3E%3Ccircle fill='%233498db' cx='300' cy='120' r='5'/%3E%3C/svg%3E"
+                class="card-img-top"
+                alt="Trakeo de consumo"
+              />
+              <div class="card-body">
+                <div class="icon-container icon-funcionalidad mb-3">
+                  <i class="bi bi-graph-up"></i>
+                </div>
+                <h5 class="card-title text-warning">Trakeo de Consumo</h5>
+                <p class="card-text text-light">
+                  Vea en tiempo real el consumo de la totalidad de sus
+                  electrodomésticos.
+                </p>
+                <a href="#" class="btn btn-sm btn-custom">Leer más</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card funcionalidad-card card-funcionalidad">
+              <img
+                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='200' viewBox='0 0 400 200'%3E%3Crect fill='%231a2530' width='400' height='200'/%3E%3Crect fill='%23202b3d' x='50' y='30' width='300' height='140' rx='10'/%3E%3Ccircle fill='%233498db' cx='120' cy='80' r='25'/%3E%3Ccircle fill='%232ecc71' cx='200' cy='80' r='25'/%3E%3Ccircle fill='%23e67e22' cx='280' cy='80' r='25'/%3E%3Crect fill='%2333498db' x='100' y='120' width='40' height='10' rx='2'/%3E%3Crect fill='%232ecc71' x='180' y='120' width='40' height='10' rx='2'/%3E%3Crect fill='%23e67e22' x='260' y='120' width='40' height='10' rx='2'/%3E%3C/svg%3E"
+                class="card-img-top"
+                alt="Noticias"
+              />
+              <div class="card-body">
+                <div class="icon-container icon-funcionalidad mb-3">
+                  <i class="bi bi-newspaper"></i>
+                </div>
+                <h5 class="card-title text-warning">
+                  Noticias y concientización
+                </h5>
+                <p class="card-text text-light">
+                  Revise las últimas noticias respecto al consumo eléctrico.
+                </p>
+                <a href="./concientización.html" class="btn btn-sm btn-custom"
+                  >Leer más</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="py-4 bg-dark bg-gradient text-white">
       <div class="container text-center">
-        <p class="mb-0">
-          © 2023 Ahorro Inteligente. Todos los derechos reservados.
-        </p>
+        <div class="d-flex justify-content-center gap-3 mb-3">
+          <a href="#" class="text-white"><i class="bi bi-facebook fs-4"></i></a>
+          <a href="#" class="text-white"><i class="bi bi-twitter fs-4"></i></a>
+          <a href="#" class="text-white"
+            ><i class="bi bi-instagram fs-4"></i
+          ></a>
+          <a href="#" class="text-white"><i class="bi bi-linkedin fs-4"></i></a>
+        </div>
+        <p class="mb-0">© 2023 ElectroAhorro. Todos los derechos reservados.</p>
       </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const cards = document.querySelectorAll(".card-hover");
-        cards.forEach((card) => {
-          card.style.transition = "all 0.3s ease";
-        });
-      });
-    </script>
   </body>
 </html>
