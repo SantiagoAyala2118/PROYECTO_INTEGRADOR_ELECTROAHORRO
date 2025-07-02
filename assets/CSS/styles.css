@@ -1,0 +1,30 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-image: url('../img/imagen-fondo-registro.jpg');
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 19px;
+}
+
+#contenedor-formulario {
+    background-color: rgba(0, 0, 3, 0.6);
+    color: #00CCFF
+}
+
+
+.form-check-input:hover{
+    cursor:pointer
+}
+.form-check-label:hover{
+    cursor:pointer;
+}
+
+
+
+
+
+
+
+

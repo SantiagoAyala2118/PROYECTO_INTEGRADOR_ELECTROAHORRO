@@ -1,0 +1,25 @@
+      :root {
+        --azul: #0d6efd; 
+        --amarillo: #ffc107; 
+        --negro: #212529; 
+      }
+      .bg-custom-azul {
+        background-color: var(--azul);
+      }
+      .text-custom-amarillo {
+        color: var(--amarillo);
+      }
+      .btn-custom {
+        background-color: var(--amarillo);
+        color: var(--negro);
+        border: none;
+        font-weight: bold;
+      }
+      .btn-custom:hover {
+        background-color: #e0a800;
+      }
+      .card-hover:hover {
+        transform: translateY(-5px);
+        transition: transform 0.3s ease;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      }
