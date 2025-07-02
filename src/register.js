@@ -19,5 +19,7 @@ formRegister.addEventListener("submit", async (e)=>{
     if(response.ok){
         console.log(data);
         window.location.href = './login.html';
+    }else{
+        window.alert('Hubo un problema del servidor')
     }
 });
