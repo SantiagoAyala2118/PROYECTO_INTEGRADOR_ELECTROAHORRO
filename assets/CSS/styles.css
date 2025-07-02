@@ -3,14 +3,18 @@ body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
-    background-image: url('../img/fondo-formulario-registro-login.jpg'); 
-    font-family: 'Bebas Neue', sans-serif;
+    background-image: url('../img/Fondo1-ElectroAhorro.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 19px;
 }
 
 #contenedor-formulario {
     background-color: rgba(0, 0, 3, 0.6);
-    color: #00CCFF
+    color: #f0f405
 }
 
 
