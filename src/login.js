@@ -17,6 +17,8 @@ formLogin.addEventListener("submit", async (e)=>{
     const data= await response.json();
     if(response.ok){
         console.log(data);
-        window.location.href ='./index.html';
+        window.location.href ='../bienvenida.html';
+    }else{
+        window.alert('Error del servidor')
     }
 });
