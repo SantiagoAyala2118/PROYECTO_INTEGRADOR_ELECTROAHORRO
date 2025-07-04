@@ -9,9 +9,9 @@ body {
   /* background-image: linear-gradient(#040220, #0e0e5f, #201b6d, #3a3d99); */
   background-image: url('../img/WhatsApp\ Image\ 2025-07-02\ at\ 15.06.32.jpeg');
   background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed; 
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -138,8 +138,9 @@ header {
 .funcionalidad-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 15px 30px rgba(0, 221, 255, 0.986);
-  border-color:#51b3f5;
+  border-color: #51b3f5;
 }
+
 .card-img-top {
   border-radius: 10px 10px 0 0;
   height: 200px;
@@ -148,10 +149,10 @@ header {
   background: rgba(255, 255, 255, 0.05);
 }
 
-#card-icon{
+#card-icon {
   border: solid;
-  border-color:#0290f0; 
-  color:white;
+  border-color: #0290f0;
+  color: white;
   box-shadow: 2px 2px 30px 1px rgba(0, 144, 246, 0.773);
 
 }
@@ -185,13 +186,52 @@ footer {
   .display-4 {
     font-size: 2.5rem;
   }
-    
+
   .lead {
     font-size: 1rem;
   }
 }
- @keyframes pulse {
-    0% { box-shadow: 0 0 0 0 rgba(255, 215, 0, 0.4); }
-    70% { box-shadow: 0 0 0 15px rgba(255, 215, 0, 0); }
-    100% { box-shadow: 0 0 0 0 rgba(255, 215, 0, 0); }
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 215, 0, 0.4);
   }
+
+  70% {
+    box-shadow: 0 0 0 15px rgba(255, 215, 0, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 215, 0, 0);
+  }
+}
+
+.noticias-card {
+  color: white;
+  border: solid;
+  border-radius: 10px;
+  border-width: 4px;
+  border-color: #0290f0;
+  box-shadow: 0 10px 20px rgba(0, 144, 246, 0.773);
+  transition: all 0.3s ease;
+  background: rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+  max-height:600px;
+  height:550px;
+}
+
+.noticias-card h5{
+  color: #FFD700;
+}
+
+.noticias-card img{
+  margin-bottom:40px;
+}
+
+.noticias-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 221, 255, 0.986);
+  border-color: #51b3f5;
+}
