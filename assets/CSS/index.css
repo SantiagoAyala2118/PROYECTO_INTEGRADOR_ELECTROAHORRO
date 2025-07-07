@@ -253,7 +253,23 @@ footer {
   text-align: center;
 }
 
-#ingresado-convertir select{
+#ingresado-convertir select {
   max-width: 500px;
   width: 300px;
+}
+
+#check-consumo {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+#horasUsoLabel {
+  margin-right:30px;
+}
+
+.horasUsoDiario {
+  display: flex;
+  align-items: start;
+  flex-direction: row;
 }

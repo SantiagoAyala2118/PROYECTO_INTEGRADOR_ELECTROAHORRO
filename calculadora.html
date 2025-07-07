@@ -53,11 +53,46 @@
   <main>
     <section class="d-flex justify-content-center p-4">
       <div calss="container py-5 d-flex">
+
         <div class="card p-4 bg-black" id="calculadora">
+
+          <!-- Check por si el usuario quiere calcular su consumo mensual -->
+          <div id="check-consumo">
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="checkbox" id="calculoMensual">
+              <label class="form-check-label text-warning" for="calculoMensual">
+                Calcular consumo mensual estimado
+              </label>
+            </div>
+
+            <div class="d-flex">
+              <div id="seccionMensual" class="d-none">
+                <div class="mb-3 horasUsoDiario">
+                  <label for="horasUso" id="horasUsoLabel" class="form-label text-warning">Horas de uso diario:</label>
+                  <input type="number" class="form-control" id="horasUso" placeholder="Ej: 3" min="0" step="0.1" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Zona de selección de electrodomésticos -->
           <form id="form-conversion">
             <div class="mb-3">
+              <label for="electrodomesticos" class="form-label text-warning">Eliga un electrodoméstico para calcular su
+                consumo (opcional)</label>
+              <select class="form-select" id="electrodomesticos">
+                <option value="ventilador">Ventilador</option>
+                <option value="heladera">Heladera</option>
+                <option value="televisor">Televisor</option>
+                <option value="hornoElectrico">Horno Eléctrico</option>
+                <option value="microondas">Microondas</option>
+                <option value="lavarropas">Lavarropas</option>
+              </select>
+            </div>
+
+            <!-- Zona de elección del valor a convertir -->
+            <div class="mb-3">
               <label for="valor" class="form-label text-warning">Valor a convertir:</label>
-              <input type="number" class="form-control" id="valor" placeholder="Ej: 1500" required />
+              <input type="number" class="form-control" id="valor" placeholder="Ej: 1500" value="" required />
             </div>
 
             <div id="ingresado-convertir">
@@ -71,6 +106,7 @@
                 </select>
               </div>
 
+              <!-- Zona de selección de unidad de salida -->
               <div>
                 <label for="valorDeSalida" class="form-label text-warning">Convertir a:</label>
                 <select class="form-select" id="valorDeSalida">
@@ -83,7 +119,7 @@
               </div>
             </div>
 
-
+            <!-- Zona de selección del valor del kWh en pesos -->
             <div class="mb-3">
               <label for="precio" class="form-label text-warning">Precio por kWh (en $):</label>
               <input type="number" class="form-control" id="precio" value="150" step="0.01" required />
@@ -95,6 +131,8 @@
             </div>
 
           </form>
+
+          <!-- Zona de resultado -->
           <div class="mt-2" id="resultado">
 
           </div>
