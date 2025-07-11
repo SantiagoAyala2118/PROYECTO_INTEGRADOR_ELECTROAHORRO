@@ -9,7 +9,7 @@ formRegister.addEventListener("submit", async (e)=>{
         password: formData.get('password')
     }
 
-    const response = await fetch('http://localhost:3000/register', {
+    const response = await fetch('http://localhost:4000/register', {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify(body)
