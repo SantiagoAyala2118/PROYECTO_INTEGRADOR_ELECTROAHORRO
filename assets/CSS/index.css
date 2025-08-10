@@ -1,25 +1,275 @@
-      :root {
-        --azul: #0d6efd; 
-        --amarillo: #ffc107; 
-        --negro: #212529; 
-      }
-      .bg-custom-azul {
-        background-color: var(--azul);
-      }
-      .text-custom-amarillo {
-        color: var(--amarillo);
-      }
-      .btn-custom {
-        background-color: var(--amarillo);
-        color: var(--negro);
-        border: none;
-        font-weight: bold;
-      }
-      .btn-custom:hover {
-        background-color: #e0a800;
-      }
-      .card-hover:hover {
-        transform: translateY(-5px);
-        transition: transform 0.3s ease;
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-      }
+:root {
+  --color-seguro: #3498db;
+  --color-rapido: #2ecc71;
+  --color-personalizado: #e67e22;
+  --color-funcionalidad: #9b59b6;
+}
+
+body {
+  /* background-image: linear-gradient(#040220, #0e0e5f, #201b6d, #3a3d99); */
+  background-image: url('../img/WhatsApp\ Image\ 2025-07-02\ at\ 15.06.32.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.text-custom-amarillo {
+  color: #FFD700;
+}
+
+.btn-custom {
+  background: linear-gradient(135deg, #FFD700, #FFA500);
+  color: #000;
+  font-weight: 600;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+header {
+  padding-top: 6rem;
+  padding-bottom: 4rem;
+}
+
+.feature-card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+  position: relative;
+}
+
+.feature-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  border-radius: 5px 5px 0 0;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.card-seguro::before {
+  background: linear-gradient(90deg, var(--color-seguro), #2980b9);
+}
+
+.card-rapido::before {
+  background: linear-gradient(90deg, var(--color-rapido), #27ae60);
+}
+
+.card-personalizado::before {
+  background: linear-gradient(90deg, var(--color-personalizado), #d35400);
+}
+
+.card-funcionalidad::before {
+  background: linear-gradient(90deg, var(--color-funcionalidad), #8e44ad);
+}
+
+.card-body {
+  padding: 1.5rem;
+  z-index: 2;
+}
+
+.icon-container {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  font-size: 1.8rem;
+}
+
+.icon-seguro {
+  background-color: rgba(52, 152, 219, 0.15);
+  color: var(--color-seguro);
+}
+
+.icon-rapido {
+  background-color: rgba(46, 204, 113, 0.15);
+  color: var(--color-rapido);
+}
+
+.icon-personalizado {
+  background-color: rgba(230, 126, 34, 0.15);
+  color: var(--color-personalizado);
+}
+
+.icon-funcionalidad {
+  background-color: rgba(155, 89, 182, 0.15);
+  color: var(--color-funcionalidad);
+}
+
+.funcionalidad-card {
+  border: solid;
+  border-radius: 10px;
+  border-width: 4px;
+  border-color: #0290f0;
+  box-shadow: 0 10px 20px rgba(0, 144, 246, 0.773);
+  transition: all 0.3s ease;
+  background: rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+
+.funcionalidad-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 221, 255, 0.986);
+  border-color: #51b3f5;
+}
+
+.card-img-top {
+  border-radius: 10px 10px 0 0;
+  height: 200px;
+  object-fit: contain;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+#card-icon {
+  border: solid;
+  border-color: #0290f0;
+  color: white;
+  box-shadow: 2px 2px 30px 1px rgba(0, 144, 246, 0.773);
+
+}
+
+.section-title {
+  position: relative;
+  padding-bottom: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #3498db, #2ecc71, #e67e22);
+  border-radius: 2px;
+}
+
+footer {
+  background: #1a2530;
+  color: #ecf0f1;
+  padding: 3rem 0;
+  margin-top: 4rem;
+}
+
+@media (max-width: 768px) {
+  .display-4 {
+    font-size: 2.5rem;
+  }
+
+  .lead {
+    font-size: 1rem;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 215, 0, 0.4);
+  }
+
+  70% {
+    box-shadow: 0 0 0 15px rgba(255, 215, 0, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 215, 0, 0);
+  }
+}
+
+.noticias-card {
+  color: white;
+  border: solid;
+  border-radius: 10px;
+  border-width: 4px;
+  border-color: #0290f0;
+  box-shadow: 0 10px 20px rgba(0, 144, 246, 0.773);
+  transition: all 0.3s ease;
+  background: rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+  max-height: 600px;
+  height: 550px;
+}
+
+.noticias-card h5 {
+  color: #FFD700;
+}
+
+.noticias-card img {
+  margin-bottom: 40px;
+}
+
+.noticias-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 221, 255, 0.986);
+  border-color: #51b3f5;
+}
+
+#calculadora {
+  text-align: center;
+  max-width: 900px;
+  width: 800px;
+  border: solid;
+  border-radius: 10px;
+  border-width: 4px;
+  border-color: #0290f0;
+  box-shadow: 0 10px 20px rgba(0, 144, 246, 0.773);
+}
+
+#ingresado-convertir {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+#ingresado-convertir select {
+  max-width: 500px;
+  width: 300px;
+}
+
+#check-consumo {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+#horasUsoLabel {
+  margin-right:30px;
+}
+
+.horasUsoDiario {
+  display: flex;
+  align-items: start;
+  flex-direction: row;
+}
